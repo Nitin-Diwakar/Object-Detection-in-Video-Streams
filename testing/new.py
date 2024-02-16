@@ -30,7 +30,7 @@ if st.session_state['current_page'] == 'Home':
         It features realistic gameplay, detailed graphics, and licenses with top football leagues 
         and teams around the globe, making it a favorite among fans of the sport.
     ''')
-    st.image('')
+    st.image('https://github.com/Nitin-Diwakar/Object-Detection-in-Video-Streams/blob/master/Image/stadium.jpg?raw=true')
 
 elif st.session_state['current_page'] == 'About Us':
     st.header('About Us')
