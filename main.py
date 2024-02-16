@@ -4,22 +4,6 @@ import math
 import tempfile
 from ultralytics import YOLO
 
-
-# Use a URL for the background image for simplicity and deployment
-background_image_url = 'https://example.com/path/to/your/background.jpg'  # Change to your image URL
-
-# Custom CSS to inject into the Streamlit page
-background_style = f"""
-<style>
-body {{
-background-image: url("{background_image_url}");
-background-size: cover;
-}}
-</style>
-"""
-
-st.markdown(background_style, unsafe_allow_html=True)
-
 st.header("Object Detection In FIFA Game")
 
 
