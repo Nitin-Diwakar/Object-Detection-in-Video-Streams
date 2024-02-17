@@ -1,0 +1,5 @@
+setuptools==69.0.2
+wheel==0.42.0
+streamlit==1.29.0
+ultralytics==8.1.11
+opencv-python==4.8.1
