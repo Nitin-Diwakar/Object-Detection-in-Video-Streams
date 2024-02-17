@@ -4,8 +4,8 @@ import math
 import tempfile
 from ultralytics import YOLO
 
-st.header("Object Detection In FIFA Game")
 
+st.header("Object Detection In FIFA Game")
 
 uploaded_files = st.file_uploader("Choose an MP4 video file", accept_multiple_files=True, type=["mp4"])
 
