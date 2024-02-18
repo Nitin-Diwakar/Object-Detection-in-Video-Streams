@@ -57,8 +57,8 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-
-st.title("Object Detection in FIFA Game⚽︎")
+st.markdown('<h1 class="st-bj">Object Detection in FIFA Game⚽︎</h1>', unsafe_allow_html=True)
+# st.title("Object Detection in FIFA Game⚽︎")
 # Initialize session state for the current page if not already done
 if 'current_page' not in st.session_state:
     st.session_state['current_page'] = 'Home'
