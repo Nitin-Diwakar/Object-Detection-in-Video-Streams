@@ -13,7 +13,7 @@ background_color = "#0B0C10"
 text_color = "#C5C6C7"
 button_color = "#66FCF1"
 button_hover_color = "#45A29E"
-header_color = "#c2c3c4"
+header_color = "#9e9e9e"
 font_family = "Arial, sans-serif"  # You can change this to any font you prefer
 
 st.markdown(
