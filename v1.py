@@ -4,6 +4,23 @@ import math
 import tempfile
 from ultralytics import YOLO
 
+# Set the page config to wide mode
+st.set_page_config(layout="wide")
+
+# Add custom CSS to set background color
+background_color = "#f0f2f6"  # Light grey color; change this to your preferred color
+st.markdown(
+    f"""
+    <style>
+    .stApp {{
+        background: {background_color};
+    }}
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
+
 st.header("Object Detection in FIFA Game")
 # Initialize session state for the current page if not already done
 if 'current_page' not in st.session_state:
