@@ -8,7 +8,7 @@ from ultralytics import YOLO
 st.set_page_config(layout="wide")
 
 # Add custom CSS to set background color
-background_color = "#f0f2f6"  # Light grey color; change this to your preferred color
+background_color = "#185fed"  # Light grey color; change this to your preferred color
 st.markdown(
     f"""
     <style>
