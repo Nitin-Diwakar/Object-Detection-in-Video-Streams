@@ -44,3 +44,9 @@ This repository is an open community project. We encourage everyone to contribut
 
 We appreciate your contributions and are excited to see how this project evolves with the community's input. For any queries or discussions, please feel free to open an issue in the repository.
 
+## Contributors
+
+We value all the contributions made by our community members. Please see the [list of contributors](CONTRIBUTING.md) who have participated in this project.
+
+
+
