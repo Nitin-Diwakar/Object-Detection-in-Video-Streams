@@ -106,7 +106,7 @@ if st.session_state['current_page'] == 'Home':
         It features realistic gameplay, detailed graphics, and licenses with top football leagues 
         and teams around the globe, making it a favorite among fans of the sport.
     ''')
-    st.image('https://github.com/Nitin-Diwakar/Object-Detection-in-Video-Streams/blob/master/Image/stadium2.jpg')
+    st.image('https://github.com/Nitin-Diwakar/Object-Detection-in-Video-Streams/blob/master/Image/stadium2.jpg?raw=true')
     st.subheader('Elevate Your Gaming Strategy with Advanced AI')
     st.write('''
         Welcome to a new era of gaming analytics, where advanced artificial intelligence meets the dynamism of football. 
