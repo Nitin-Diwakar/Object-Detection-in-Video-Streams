@@ -12,7 +12,7 @@ st.markdown(
     <style>
     .stApp {
         background-image: linear-gradient(to top, #000000, #171717);
-        color: #2B2B2B;
+        color: #ffffff;
     }
     .stButton>button {
         background-color: #007BFF;
@@ -25,7 +25,7 @@ st.markdown(
         border-color: #0056b3;
     }
     h1, h2, h3, h4, h5, h6 {
-        color: #f51b1b;
+        color: #fa3e3e;
     }
     .css-145kmo2 {
         background-color: #333940;
@@ -37,7 +37,7 @@ st.markdown(
 )
 
 
-st.title("Object Detection in FIFA⚽︎ Game")
+st.title("Object Detection in FIFA Game⚽︎")
 # Initialize session state for the current page if not already done
 if 'current_page' not in st.session_state:
     st.session_state['current_page'] = 'Home'
