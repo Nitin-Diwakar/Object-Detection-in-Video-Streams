@@ -25,7 +25,7 @@ st.markdown(
         border-color: #0056b3;
     }
     h1, h2, h3, h4, h5, h6 {
-        color: #003366;
+        color: #8EE4AF;
     }
     .css-145kmo2 {
         background-color: #333940;
@@ -37,7 +37,7 @@ st.markdown(
 )
 
 
-st.title("Object Detection in FIFA⚽ Game")
+st.title("Object Detection in FIFA⚽︎ Game")
 # Initialize session state for the current page if not already done
 if 'current_page' not in st.session_state:
     st.session_state['current_page'] = 'Home'
