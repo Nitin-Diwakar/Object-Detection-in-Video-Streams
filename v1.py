@@ -22,7 +22,7 @@ st.markdown(
         border: 1px solid #ffffff;
     }
     .stButton>button:hover {
-        background-color: #00994d;
+        background-color: #00b3b3;
         border-color: #00994d;
     }
     h1, h2, h3, h4, h5, h6 {
