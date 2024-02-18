@@ -19,11 +19,11 @@ st.markdown(
         background-color: #000000;
         color: white;
         border-radius: 4px;
-        border: 1px solid #007BFF;
+        border: 1px solid #ffffff;
     }
     .stButton>button:hover {
-        background-color: #0056b3;
-        border-color: #0056b3;
+        background-color: #00994d;
+        border-color: #00994d;
     }
     h1, h2, h3, h4, h5, h6 {
         color: #000000;
