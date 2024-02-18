@@ -8,11 +8,13 @@ from ultralytics import YOLO
 st.set_page_config(layout="wide")
 
 
-background_color = "#0B0C10"  # Dark blue background color
-text_color = "#C5C6C7"        # Light grey text color
-button_color = "#66FCF1"      # Cyan button color
-button_hover_color = "#45A29E" # Darker cyan for button hover
-header_color = "#1F2833"      # Dark blue for headers
+# Custom color scheme and styles
+background_color = "#0B0C10"
+text_color = "#C5C6C7"
+button_color = "#66FCF1"
+button_hover_color = "#45A29E"
+header_color = "#1F2833"
+font_family = "Arial, sans-serif"  # You can change this to any font you prefer
 
 st.markdown(
     f"""
@@ -20,23 +22,35 @@ st.markdown(
     .stApp {{
         background-color: {background_color};
         color: {text_color};
+        font-family: {font_family};
     }}
     .stButton>button {{
         background-color: {button_color};
         color: {background_color};
         border-radius: 4px;
-        border: 2px solid {button_hover_color};
+        border: none;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        padding: 10px 24px;
+        transition: background-color 0.3s, box-shadow 0.3s;
     }}
     .stButton>button:hover {{
         background-color: {button_hover_color};
-        border-color: {text_color};
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     }}
     h1, h2, h3, h4, h5, h6 {{
         color: {header_color};
     }}
+    .st-cj {{
+        background-color: rgba(31, 40, 51, 0.8);  // Adjust the alpha for transparency
+        padding: 10px;
+        border-radius: 5px;
+    }}
     .css-145kmo2 {{
         background-color: {header_color};
         color: {text_color};
+    }}
+    .st-af {{
+        margin: 20px 0;  // Adds spacing around the nav bar
     }}
     </style>
     """,
