@@ -14,6 +14,7 @@ st.markdown(
         background-image: linear-gradient(to top, #154775, #0f3252);
         color: #2B2B2B;
     }
+    
     .stButton>button {
         background-color: #007BFF;
         color: white;
