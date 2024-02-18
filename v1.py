@@ -1,3 +1,4 @@
+# import library
 import streamlit as st
 import cv2
 import math
@@ -5,17 +6,18 @@ import tempfile
 from ultralytics import YOLO
 
 # Set the page config to wide mode
-st.set_page_config(layout="wide", page_title="Object Detection in FIFA Game⚽︎")
+st.set_page_config(layout="wide", page_title="DBDA01")
 
 
-# Custom color scheme and styles
+# Setting color scheme and styles
 background_color = "#0B0C10"
 text_color = "#C5C6C7"
 button_color = "#66FCF1"
 button_hover_color = "#45A29E"
 header_color = "#8b8c8c"
-font_family = "Arial, sans-serif"  # You can change this to any font you prefer
+font_family = "Arial, sans-serif"
 
+# custom setting for website
 st.markdown(
     f"""
     <style>
@@ -57,14 +59,16 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-st.markdown("<h1 style='text-align: center; color: white;'>Object Detection in FIFA Game⚽︎</h1>", unsafe_allow_html=True)
+#Title of the code
+st.markdown("<h1 style='text-align: center; color: white;'>Object Detection in FIFA Game⚽︎</h1>",
+            unsafe_allow_html=True)
 
-# st.title("Object Detection in FIFA Game⚽︎")
+
 # Initialize session state for the current page if not already done
 if 'current_page' not in st.session_state:
     st.session_state['current_page'] = 'Home'
 
-# Function to change the current page
+
 
 
 def navigate_to(page):
@@ -80,11 +84,9 @@ with col2:
 with col3:
     st.button('About Us', on_click=navigate_to, args=('About Us',))
 with col4:
-    st.button('Help', on_click=navigate_to, args=('Help',))  # New Help button
+    st.button('Help', on_click=navigate_to, args=('Help',)) 
 
 # Function to display the FAQ content
-
-
 def show_faq():
     st.header('Frequently Asked Questions')
     faqs = [
@@ -136,6 +138,7 @@ def show_faq():
 
 
 # Page rendering based on the current_page state
+#HOME
 if st.session_state['current_page'] == 'Home':
     st.subheader('What is FIFA Game?')
     st.write('''
@@ -180,6 +183,7 @@ if st.session_state['current_page'] == 'Home':
     ''')
     st.image('https://user-images.githubusercontent.com/26833433/243418624-5785cb93-74c9-4541-9179-d5c6782d491a.png')
 
+#ABOUT US
 elif st.session_state['current_page'] == 'About Us':
     st.header('Contributors')
     contributors = [
@@ -222,14 +226,14 @@ elif st.session_state['current_page'] == 'About Us':
         </style>
     """, unsafe_allow_html=True)
 
-    # Create a column for each contributor
+    # Column for each contributor
     for contributor in contributors:
-        cols = st.columns([1, 2, 5])  # Adjust the ratio as needed
+        cols = st.columns([1, 2, 5])  
         with cols[0]:
-            # Set the width as per your UI design
+            
             st.image(contributor["photo"], width=100)
         with cols[1]:
-            # Additional space added below the subheader
+            
             st.subheader(contributor["name"])
             st.markdown("<br>", unsafe_allow_html=True)
         with cols[2]:
@@ -237,8 +241,11 @@ elif st.session_state['current_page'] == 'About Us':
                 st.markdown(
                     f"[LinkedIn]({contributor['linkedin']})", unsafe_allow_html=True)
 
+#HELP
 elif st.session_state['current_page'] == 'Help':
-    show_faq()  # Display the FAQ section when Help is selected
+    show_faq()  # Display the FAQ section
+   
+#DETECTION 
 elif st.session_state['current_page'] == 'Detection':
     uploaded_files = st.file_uploader(
         "Choose an MP4 video file", accept_multiple_files=True, type=["mp4"])
@@ -273,11 +280,12 @@ elif st.session_state['current_page'] == 'Detection':
             if not cap.isOpened():
                 print("Error while reading the frame")
 
-            frame_width = int(cap.get(3))
-            frame_height = int(cap.get(4))
+            frame_width = int(cap.get(3)) #set width
+            frame_height = int(cap.get(4)) #set height
 
             # Codec used to compress the frames
             fourcc = cv2.VideoWriter_fourcc(*'mp4v')
+            
             # Temporary file for the output video
             output_video_path = tempfile.mktemp(suffix='.mp4')
             frame_width, frame_height = int(cap.get(3)), int(cap.get(4))
@@ -286,13 +294,15 @@ elif st.session_state['current_page'] == 'Detection':
                                   20.0, (frame_width, frame_height))
 
             progress_text = "Object Detection in Progress. Please wait..."
-            my_bar = st.progress(0)
+            my_bar = st.progress(0) #Intial:0, when detection process start
 
             frame_processed = 0
+            #reading the frames
             while cap.isOpened():
                 ret, frame = cap.read()
                 if ret:
-                    results = model.predict(frame, stream=True)
+                    results = model.predict(frame, stream=True) # predicting each frame
+                    # Draw bounding boxes, class label and confidence score
                     for r in results:
                         boxes = r.boxes
                         print(r.boxes)

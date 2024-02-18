@@ -1,4 +1,4 @@
-"""
+
     <style>
     .stApp {
         background-image: linear-gradient(to top, #ffffff, #737373);
@@ -23,4 +23,4 @@
         color: white;
     }
     </style>
-    """
+    
