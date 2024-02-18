@@ -221,7 +221,7 @@ elif st.session_state['current_page'] == 'Detection':
     uploaded_files = st.file_uploader(
         "Choose an MP4 video file", accept_multiple_files=True, type=["mp4"])
 
-    st.warning(
+    st.info(
         """
     **NOTE:**
     1. The video should not exceed more than 200MB.
