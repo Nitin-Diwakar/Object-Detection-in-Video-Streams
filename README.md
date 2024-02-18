@@ -1,3 +1,9 @@
+![Python 3.10](https://img.shields.io/badge/python-3.10-blue.svg)
+![opencv-python](https://img.shields.io/badge/opencv-supported-blue.svg)
+![YOLOv8n](https://img.shields.io/badge/YOLOv8n-supported-blue.svg)
+![streamlit](https://img.shields.io/badge/streamlit-supported-green.svg)
+
+
 ![clip](https://github.com/Nitin-Diwakar/Object-Detection-in-Video-Streams/blob/master/readme_source/clip.gif)
 # Object Detection in FIFA Game
 
