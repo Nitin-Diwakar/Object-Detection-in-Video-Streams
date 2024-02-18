@@ -10,12 +10,10 @@ st.set_page_config(layout="wide")
 st.markdown(
     """
     <style>
-    # .stApp {
-    #     background-image: url({"https://unsplash.com/photos/white-petaled-flower-yuuAGGXfe54"});
-    #     background-size: cover;
-    #     # background-image: linear-gradient(to top, #F4F4F4, #4B9CD3);
-    #     # color: #2B2B2B;
-    # }
+    .stApp {
+        background-image: linear-gradient(to top, #F4F4F4, #4B9CD3);
+        color: #2B2B2B;
+    }
     .stButton>button {
         background-color: #007BFF;
         color: white;
