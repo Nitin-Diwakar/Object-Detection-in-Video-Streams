@@ -11,8 +11,10 @@ st.markdown(
     """
     <style>
     .stApp {
-        background-image: linear-gradient(to top, #F4F4F4, #4B9CD3);
-        color: #2B2B2B;
+        background-image: url({"https://github.com/Nitin-Diwakar/Object-Detection-in-Video-Streams/blob/master/Image/dark_background.jpg?raw=true"})
+        background-size: cover;
+        # background-image: linear-gradient(to top, #F4F4F4, #4B9CD3);
+        # color: #2B2B2B;
     }
     .stButton>button {
         background-color: #007BFF;
