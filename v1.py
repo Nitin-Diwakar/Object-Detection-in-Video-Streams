@@ -11,7 +11,7 @@ st.markdown(
     """
     <style>
     .stApp {
-        background-image: linear-gradient(to right, #6a11cb, #2575fc);
+        background-image: linear-gradient(to right, #09203F, #537895);
     }
     </style>
     """,
