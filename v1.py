@@ -5,7 +5,7 @@ import tempfile
 from ultralytics import YOLO
 
 # Set the page config to wide mode
-st.set_page_config(layout="wide")
+st.set_page_config(layout="wide", page_title="Object Detection in FIFA Game⚽︎")
 
 
 # Custom color scheme and styles
@@ -52,22 +52,13 @@ st.markdown(
     .st-af {{
         margin: 20px 0;  // Adds spacing around the nav bar
     }}
-    .st-bj {
-        text-align: center;
-    }
-    h1 {
-        position: absolute;
-        top: 0;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 100%;
-    }
     </style>
     """,
     unsafe_allow_html=True
 )
 
-st.markdown('<h1 class="st-bj">Object Detection in FIFA Game⚽︎</h1>', unsafe_allow_html=True)
+st.markdown("<h1 style='text-align: center; color: white;'>Object Detection in FIFA Game⚽︎</h1>", unsafe_allow_html=True)
+
 # st.title("Object Detection in FIFA Game⚽︎")
 # Initialize session state for the current page if not already done
 if 'current_page' not in st.session_state:
