@@ -11,7 +11,7 @@ st.markdown(
     """
     <style>
     .stApp {
-        background-image: linear-gradient(to top, #F4F4F4, #4B9CD3);
+        background-image: linear-gradient(to top, #9e9b9b, #4B9CD3);
         color: #2B2B2B;
     }
     .stButton>button {
@@ -32,7 +32,7 @@ st.markdown(
         color: white;
     }
     </style>
-    """,
+    """,    
     unsafe_allow_html=True
 )
 
