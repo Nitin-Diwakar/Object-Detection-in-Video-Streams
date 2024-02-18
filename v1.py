@@ -7,32 +7,39 @@ from ultralytics import YOLO
 # Set the page config to wide mode
 st.set_page_config(layout="wide")
 
+
+background_color = "#0B0C10"  # Dark blue background color
+text_color = "#C5C6C7"        # Light grey text color
+button_color = "#66FCF1"      # Cyan button color
+button_hover_color = "#45A29E" # Darker cyan for button hover
+header_color = "#1F2833"      # Dark blue for headers
+
 st.markdown(
-    """
+    f"""
     <style>
-    .stApp {
-        background-image: linear-gradient(to top,   #000080,   #000080);
-        color: #ffffff;
-    }
-    .stButton>button {
-        background-color: #007BFF;
-        color: white;
+    .stApp {{
+        background-color: {background_color};
+        color: {text_color};
+    }}
+    .stButton>button {{
+        background-color: {button_color};
+        color: {background_color};
         border-radius: 4px;
-        border: 1px solid #007BFF;
-    }
-    .stButton>button:hover {
-        background-color: #0056b3;
-        border-color: #0056b3;
-    }
-    h1, h2, h3, h4, h5, h6 {
-        color: #007BFF;
-    }
-    .css-145kmo2 {
-        background-color: #333940;
-        color: white;
-    }
+        border: 2px solid {button_hover_color};
+    }}
+    .stButton>button:hover {{
+        background-color: {button_hover_color};
+        border-color: {text_color};
+    }}
+    h1, h2, h3, h4, h5, h6 {{
+        color: {header_color};
+    }}
+    .css-145kmo2 {{
+        background-color: {header_color};
+        color: {text_color};
+    }}
     </style>
-    """,    
+    """,
     unsafe_allow_html=True
 )
 
