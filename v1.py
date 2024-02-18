@@ -16,13 +16,13 @@ st.markdown(
     }
     
     .stButton>button {
-        background-color: #007BFF;
+        background-color: #000000;
         color: white;
         border-radius: 4px;
         border: 1px solid #007BFF;
     }
     .stButton>button:hover {
-        background-color: #000000;
+        background-color: #0056b3;
         border-color: #0056b3;
     }
     h1, h2, h3, h4, h5, h6 {
