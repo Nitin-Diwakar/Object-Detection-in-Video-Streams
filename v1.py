@@ -22,8 +22,8 @@ st.markdown(
         border: 1px solid #ffffff;
     }
     .stButton>button:hover {
-        background-color: #00b3b3;
-        border-color: #ccffff;
+        background-color: #b3b3cc;
+        border-color: #b3b3cc;
     }
     h1, h2, h3, h4, h5, h6 {
         color: #000000;
