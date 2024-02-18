@@ -7,14 +7,12 @@ from ultralytics import YOLO
 # Set the page config to wide mode
 st.set_page_config(layout="wide")
 
-# Add custom CSS to set background color
-background_color = "#00297a"  # Light grey color; change this to your preferred color
 st.markdown(
-    f"""
+    """
     <style>
-    .stApp {{
-        background: {background_color};
-    }}
+    .stApp {
+        background-image: linear-gradient(to right, #6a11cb, #2575fc);
+    }
     </style>
     """,
     unsafe_allow_html=True
