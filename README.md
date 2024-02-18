@@ -1,3 +1,4 @@
+![clip](https://github.com/Nitin-Diwakar/Object-Detection-in-Video-Streams/blob/master/readme_source/clip.gif)
 # Object Detection in FIFA Game
 
 ## About This Project
