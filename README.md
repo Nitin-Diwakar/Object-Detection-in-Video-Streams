@@ -35,3 +35,12 @@ This repository is an open community project. We encourage everyone to contribut
    streamlit run v1.py
    ```
 
+### How to Send Pull Requests
+1. After making your changes in the forked repository, push your changes to your GitHub repository.
+2. Go to the original repository you forked from.
+3. Click the "Pull requests" tab and then click the "New pull request" button.
+4. Choose your fork as the compare branch and the original repository's branch you want to contribute to as the base branch.
+5. Review the changes, add a description of your updates, and click "Create pull request".
+
+We appreciate your contributions and are excited to see how this project evolves with the community's input. For any queries or discussions, please feel free to open an issue in the repository.
+
