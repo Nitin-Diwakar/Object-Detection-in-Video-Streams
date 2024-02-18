@@ -25,7 +25,7 @@ st.markdown(
         border-color: #0056b3;
     }
     h1, h2, h3, h4, h5, h6 {
-        color: #8EE4AF;
+        color: #f51b1b;
     }
     .css-145kmo2 {
         background-color: #333940;
