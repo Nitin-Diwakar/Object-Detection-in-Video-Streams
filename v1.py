@@ -52,6 +52,16 @@ st.markdown(
     .st-af {{
         margin: 20px 0;  // Adds spacing around the nav bar
     }}
+    .st-bj {
+        text-align: center;
+    }
+    h1 {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+    }
     </style>
     """,
     unsafe_allow_html=True
