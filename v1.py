@@ -10,7 +10,7 @@ st.set_page_config(layout="wide")
 
 # Custom color scheme and styles
 background_color = "#0B0C10"
-text_color = "#C5C6C7"
+text_color = "#d4d5d6"
 button_color = "#66FCF1"
 button_hover_color = "#45A29E"
 header_color = "#1F2833"
