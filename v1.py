@@ -11,7 +11,25 @@ st.markdown(
     """
     <style>
     .stApp {
-        background-image: linear-gradient(to right, #09203F, #537895);
+        background-image: linear-gradient(to top, #F4F4F4, #4B9CD3);
+        color: #2B2B2B;
+    }
+    .stButton>button {
+        background-color: #007BFF;
+        color: white;
+        border-radius: 4px;
+        border: 1px solid #007BFF;
+    }
+    .stButton>button:hover {
+        background-color: #0056b3;
+        border-color: #0056b3;
+    }
+    h1, h2, h3, h4, h5, h6 {
+        color: #003366;
+    }
+    .css-145kmo2 {
+        background-color: #333940;
+        color: white;
     }
     </style>
     """,
