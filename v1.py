@@ -6,7 +6,7 @@ import tempfile
 from ultralytics import YOLO
 
 # Set the page config to wide mode
-st.set_page_config(layout="wide", page_title="DBDA01")
+st.set_page_config(layout="wide", page_title="DBDA01_v2")
 
 
 # Setting color scheme and styles
