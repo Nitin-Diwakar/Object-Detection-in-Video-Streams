@@ -153,7 +153,7 @@ if st.session_state['current_page'] == 'Home':
         It features realistic gameplay, detailed graphics, and licenses with top football leagues 
         and teams around the globe, making it a favorite among fans of the sport.
     ''')
-    st.image('https://github.com/Nitin-Diwakar/Object-Detection-in-Video-Streams/blob/master/Image/FIFA.jpg?raw=true')
+    st.image('https://github.com/Nitin-Diwakar/Object-Detection-in-Video-Streams/blob/master/Image/FIFA.jpg?raw=true',use_column_width=True)
    
     # Enter a some space
     st.markdown("<br>", unsafe_allow_html=True)
@@ -179,7 +179,7 @@ if st.session_state['current_page'] == 'Home':
         about shaping the future of sports gaming and strategy with AI as your ally.
 
     ''')
-    st.image('https://github.com/Nitin-Diwakar/Object-Detection-in-Video-Streams/blob/master/Image/ANOTATION.jpg?raw=true')
+    st.image('https://github.com/Nitin-Diwakar/Object-Detection-in-Video-Streams/blob/master/Image/ANOTATION.jpg?raw=true',use_column_width=True)
     
     # Enter a some space
     st.markdown("<br>", unsafe_allow_html=True)
@@ -268,7 +268,7 @@ elif st.session_state['current_page'] == 'Detection':
     st.write('''
              This is how the result set looks like when you upload your video.
              The result will be in the form of video,it's just a reference image.''')
-    st.image('https://github.com/Nitin-Diwakar/Object-Detection-in-Video-Streams/blob/master/Image/Denote.jpg?raw=true')
+    st.image('https://github.com/Nitin-Diwakar/Object-Detection-in-Video-Streams/blob/master/Image/Denote.jpg?raw=true',use_column_width=True)
     # Enter a some space
     st.markdown("<br>", unsafe_allow_html=True)
     st.markdown("<br>", unsafe_allow_html=True)
