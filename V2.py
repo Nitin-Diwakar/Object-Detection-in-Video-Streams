@@ -300,7 +300,7 @@ elif st.session_state['current_page'] == 'Detection':
             colors = [(0, 255, 0), (0, 0, 255), (255, 0, 0)]
 
             # Load pretrained model
-            model_path = "../last.pt"
+            model_path = "last.pt"
             model = YOLO(model_path)
 
             # open video
