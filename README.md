@@ -39,7 +39,7 @@ This repository is an open community project. We encourage everyone to contribut
 2. Navigate to the home directory of the cloned repository.
 3. Run the Streamlit application by executing
    ```bash
-   streamlit run v2.py
+   streamlit run V2.py
    ```
 
 ### How to Send Pull Requests
